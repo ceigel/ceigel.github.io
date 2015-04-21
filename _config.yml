@@ -1,0 +1,13 @@
+# Site settings
+title: Ruby Mantra
+email: cristian.eigel@icloud.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a blog about programming. Most of the times I will talk about Ruby, but I might talk also
+  about C++, interviewing algorithms or hiking.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ceigel.github.io" # the base hostname & protocol for your site
+twitter_username: ceigel
+github_username:  ceigel
+
+# Build settings
+markdown: redcarpet
