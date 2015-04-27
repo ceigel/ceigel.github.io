@@ -1,13 +1,32 @@
 # Site settings
-title: Ruby Mantra
+title: Gems and Rubies
 email: cristian.eigel@icloud.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is a blog about programming. Most of the times I will talk about Ruby, but I might talk also
-  about C++, interviewing algorithms or hiking.
+  This is a blog about programming. Most of the times I talk about Ruby, but I might also
+  talk about C++, interviewing questions or hiking.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ceigel.github.io" # the base hostname & protocol for your site
 twitter_username: ceigel
 github_username:  ceigel
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_css: class
+    coderay_default_lang: ruby
+
+redcarpet:
+  extensions: []
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
